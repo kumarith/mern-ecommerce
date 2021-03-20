@@ -1,11 +1,16 @@
-//import express from 'express';
-//import products from './data/products';
-const express = require('express'); 
-const dotenv =  require('dotenv');
-const connectDB = require('./config/db');
-const products = require('./data/products');
-const productRoutes = require('./routes/productRoutes');
-const { notFound, errorHandler } = require('./middleware/errorMiddleware')
+import express from 'express';
+import dotenv from "dotenv";
+import products from './data/products';
+import connectDB from "./config/db";
+import productRoutes from "./route/productRoutes";
+import {notFound, errorHandler} from "./middleware/errorMiddleware";
+
+//const express = require('express'); 
+//const dotenv =  require('dotenv');
+//const connectDB = require('./config/db');
+//const products = require('./data/products');
+//const productRoutes = require('./routes/productRoutes');
+//const { notFound, errorHandler } = require('./middleware/errorMiddleware')
 
 dotenv.config()
 
